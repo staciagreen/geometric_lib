@@ -1,10 +1,51 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Planimetrinc functions
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+###### We have 4 types of objects here, 2 functions for each.
+
+###### *All of the functions return 
+## Circle
+- ***Area***: takes circle radius and returns its area.
+
+  _Call `area(4)` returns __50.27...___
+
+- ***Perimeter***: takes circle radius and returns circumference length
+
+  _Call `perimeter(4)` returns __25.13...___
+
+## Rectangle
+- ***Area***: takes side lengths and returns rectangle's area
+
+  _Call `area(2, 7)` returns __14___
+
+- ***Perimeter***: takes side lengths and returns rectangle's perimeter
+
+  _Call `perimeter(6, 4)` returns __20___
+
+## Square
+- ***Area***: takes side length and returns square's area
+
+  _Call `area(3)` returns __9___
+
+- ***Perimeter***: takes side length and returns square's perimeter
+
+  _Call `perimeter(2)` returns __8___
+
+## Triangle
+- ***Area***: takes side length and length of the height drawn to it and returns triangle's area
+
+  _Call `area(2, 3)` returns __3___
+
+- ***Perimeter***: takes side lengths and returns triangle's perimeter
+
+  _Call `perimeter(1,2,3)` returns __6___
+
+# Сhanges in the project
+| Commit hash   | Commit name          | Changes                                                                               |
+|---------------|----------------------|---------------------------------------------------------------------------------------|
+| *** ***       |       |                                                              |
+| *** ***       |                      |     |
+| *** ***      |                      |        |
+| *** ***       |                      |  |
+| *** ***       |                      |                                                   |
+| ***a783c94*** | comment blocks added | Acomment to each function was added                                                   |
+| ***163f18a*** | comment blocks fixed | Comments in 'circle.py' and 'triangle.py' were modified                               |
