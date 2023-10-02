@@ -1,8 +1,10 @@
 # Planimetrinc functions
-##### ***In case of questions or ambiguities you can contact [Anastasia](https://vk.com/stacia_green).***
-###### We have 4 types of objects here, 2 functions for each.
 
-###### *All the functions return results printing not more than 15 decimal places
+
+##### ***In case of questions or ambiguities you can contact [Anastasia](https://vk.com/stacia_green).***
+
+We have 4 types of objects here, 2 functions for each.
+*All the functions return results printing not more than 15 decimal places
 
 ## Circle
 
