@@ -6,7 +6,6 @@
 We have 4 types of objects here, 2 functions for each.
 *All the functions return results printing not more than 15 decimal places.
 
-Project contains unit-tests.
 
 ## Circle
 
@@ -48,14 +47,20 @@ Project contains unit-tests.
 
   _Call `perimeter(1,2,3)` returns __6___
 
+
+Project contains file with unit-tests.
+
+
 # Сhanges in the project
 
-| Commit hash   | Commit name                     | Changes                                                 |
-|---------------|---------------------------------|---------------------------------------------------------|
-| ***8ba9aeb*** | L-03: Circle and square added   | Files 'circle.py' and 'square' were added               |
-| ***d078c8d*** | L-03: Docs added                | Readme file was added                                   |
-| ***fb9cf72*** | rectangle added                 | File 'reactangle.py' was added                          |
-| ***d6df2ac*** | mistake_fixed                   | Mistake in 'rectangle.py' calculations was fixed        |
-| ***a783c94*** | comment blocks added            | A comment to each function was added                    |
-| ***163f18a*** | comment blocks fixed            | Comments in 'circle.py' and 'triangle.py' were modified |
-| ***6610d02*** | some documentation added        | First proper version of readme added                    |
+| Commit hash   | Commit name                   | Changes                                                 |
+|---------------|-------------------------------|---------------------------------------------------------|
+| ***8ba9aeb*** | L-03: Circle and square added | Files 'circle.py' and 'square' were added               |
+| ***d078c8d*** | L-03: Docs added              | Readme file was added                                   |
+| ***fb9cf72*** | rectangle added               | File 'reactangle.py' was added                          |
+| ***d6df2ac*** | mistake_fixed                 | Mistake in 'rectangle.py' calculations was fixed        |
+| ***a783c94*** | comment blocks added          | A comment to each function was added                    |
+| ***163f18a*** | comment blocks fixed          | Comments in 'circle.py' and 'triangle.py' were modified |
+| ***6610d02*** | some documentation added      | First proper version of readme added                    |
+| ***6a8702a*** | draft                         | I tried making tests                                    |
+| ***983dd97*** | tests done                    | Tests are done                                          |
