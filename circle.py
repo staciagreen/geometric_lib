@@ -8,7 +8,7 @@ def area(r):
             Возвращаемое значение:
                     area(float) - площадь круга'''
     if r <= 0:
-        return "inappropriate input parameters"
+        raise ArithmeticError
     return math.pi * r * r
 
 
@@ -19,5 +19,5 @@ def perimeter(r):
         Возвращаемое значение:
                 area(float) - периметр окружности'''
     if r <= 0:
-        return "inappropriate input parameters"
+        raise ArithmeticError
     return 2 * math.pi * r
