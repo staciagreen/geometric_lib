@@ -4,6 +4,8 @@ import circle
 import square
 import triangle
 
+DELTA = 1e-15;
+
 
 # class with test for funcs from file "rectangle.py"
 class RectangleTestCase(unittest.TestCase):
@@ -20,6 +22,11 @@ class RectangleTestCase(unittest.TestCase):
     def test_area_zero_3(self):
         res = rectangle.area(0, 0)
         self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with float result
+    def test_area_float_1(self):
+        res = rectangle.area(1.10101, 9.333333)
+        self.assertEqual(res, 10.27609296633, DELTA)
 
     # tests with negative parameter
     def test_area_negative_1(self):
@@ -63,6 +70,12 @@ class RectangleTestCase(unittest.TestCase):
     def test_perimeter_zero_1(self):
         res = rectangle.perimeter(0, 0)
         self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with float result
+
+    def test_perimeter_float_1(self):
+        res = rectangle.perimeter(1.1, 9.333333)
+        self.assertEqual(res, 20.866666)
 
     # tests with one zero parameter
 
@@ -125,6 +138,12 @@ class CircleTestCase(unittest.TestCase):
         res = circle.area(0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with float result
+
+    def test_area_float_1(self):
+        res = circle.area(1.10101)
+        self.assertEqual(res, 3.8083109344585924, DELTA)
+
     # tests with negative parameter
     def test_area_negative_1(self):
         res = circle.area(-100000)
@@ -167,6 +186,11 @@ class CircleTestCase(unittest.TestCase):
     def test_perimeter_zero_1(self):
         res = circle.perimeter(0)
         self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with float parameter
+    def test_perimeter_float_1(self):
+        res = circle.perimeter(1.10101)
+        self.assertEqual(res, 6.9178498550577965, DELTA)
 
     # tests with negative parameter
     def test_perimeter_negative_1(self):
@@ -216,6 +240,12 @@ class SquareTestCase(unittest.TestCase):
         res = square.area(0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with float result
+
+    def test_area_float_1(self):
+        res = square.area(1.10101)
+        self.assertEqual(res, 1.2122230201000002, DELTA)
+
     # tests with negative parameter
 
     def test_area_negative_1(self):
@@ -259,6 +289,12 @@ class SquareTestCase(unittest.TestCase):
     def test_perimeter_zero_1(self):
         res = square.perimeter(0)
         self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with float result
+
+    def test_perimeter_float_1(self):
+        res = square.perimeter(1.101067678981)
+        self.assertEqual(res, 4.404270715924, DELTA)
 
     # tests with negative parameter
 
@@ -317,6 +353,12 @@ class TriangleTestCase(unittest.TestCase):
         res = triangle.area(0, 0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with float result
+
+    def test_area_float_1(self):
+        res = triangle.area(1.10101, 1.8)
+        self.assertEqual(res, 0.990909, DELTA)
+
     # tests with negative parameter
     def test_area_negative_1(self):
         res = triangle.area(-12, 6)
@@ -367,6 +409,12 @@ class TriangleTestCase(unittest.TestCase):
     def test_perimeter_zero_3(self):
         res = triangle.perimeter(0, 3, 0)
         self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with float result
+
+    def test_perimeter_float_1(self):
+        res = triangle.perimeter(1.10101, 1.8, 456.7890)
+        self.assertEqual(res, 459.69001, DELTA)
 
     # tests with negative parameter
 
