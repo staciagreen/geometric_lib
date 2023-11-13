@@ -21,6 +21,15 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle.area(0, 0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with negative parameter
+    def test_area_negative_1(self):
+        res = rectangle.area(2, -2)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_area_negative_2(self):
+        res = rectangle.area(-10, 2)
+        self.assertEqual(res, "inappropriate input parameters")
+
     # tests with regular numbers
 
     def test_area_regular_1(self):
@@ -57,12 +66,25 @@ class RectangleTestCase(unittest.TestCase):
 
     # tests with one zero parameter
 
-    def test_degenerate_perimeter_1(self):
+    def test_perimeter_zero_2(self):
         res = rectangle.perimeter(5, 0)
         self.assertEqual(res, "inappropriate input parameters")
 
-    def test_degenerate_perimeter_2(self):
+    def test_perimeter_zero_3(self):
         res = rectangle.perimeter(0, 7345)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with negative parameter
+    def test_area_negative_1(self):
+        res = rectangle.perimeter(-12, 6)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_area_negative_2(self):
+        res = rectangle.perimeter(4, -21)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_area_negative_3(self):
+        res = rectangle.perimeter(-4, -21)
         self.assertEqual(res, "inappropriate input parameters")
 
     # tests with regular numbers
@@ -103,6 +125,15 @@ class CircleTestCase(unittest.TestCase):
         res = circle.area(0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with negative parameter
+    def test_area_negative_1(self):
+        res = circle.area(-100000)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_area_negative_2(self):
+        res = circle.area(-1)
+        self.assertEqual(res, "inappropriate input parameters")
+
     # tests with regular numbers
 
     def test_area_regular_1(self):
@@ -135,6 +166,15 @@ class CircleTestCase(unittest.TestCase):
 
     def test_perimeter_zero_1(self):
         res = circle.perimeter(0)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with negative parameter
+    def test_perimeter_negative_1(self):
+        res = circle.perimeter(-100000)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_perimeter_negative_2(self):
+        res = circle.perimeter(-1)
         self.assertEqual(res, "inappropriate input parameters")
 
     # tests with regular numbers
@@ -176,6 +216,16 @@ class SquareTestCase(unittest.TestCase):
         res = square.area(0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with negative parameter
+
+    def test_area_negative_1(self):
+        res = square.area(-100000)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_area_negative_2(self):
+        res = square.area(-1)
+        self.assertEqual(res, "inappropriate input parameters")
+
     # tests with regular numbers
 
     def test_area_regular_1(self):
@@ -208,6 +258,16 @@ class SquareTestCase(unittest.TestCase):
 
     def test_perimeter_zero_1(self):
         res = square.perimeter(0)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with negative parameter
+
+    def test_perimeter_negative_1(self):
+        res = square.perimeter(-100000)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_perimeter_negative_2(self):
+        res = square.perimeter(-1)
         self.assertEqual(res, "inappropriate input parameters")
 
     # tests with regular numbers
@@ -257,6 +317,15 @@ class TriangleTestCase(unittest.TestCase):
         res = triangle.area(0, 0)
         self.assertEqual(res, "inappropriate input parameters")
 
+    # tests with negative parameter
+    def test_area_negative_1(self):
+        res = triangle.area(-12, 6)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_area_negative_2(self):
+        res = triangle.area(4, -21)
+        self.assertEqual(res, "inappropriate input parameters")
+
     # tests with regular numbers
 
     def test_area_regular_1(self):
@@ -287,16 +356,30 @@ class TriangleTestCase(unittest.TestCase):
 
     # tests with zero result
 
-    def test_0_perimeter(self):
+    def test_perimeter_zero_1(self):
         res = triangle.perimeter(0, 0, 0)
         self.assertEqual(res, "inappropriate input parameters")
 
-    def test_0_perimeter(self):
+    def test_perimeter_zero_2(self):
         res = triangle.perimeter(3, 0, 3)
         self.assertEqual(res, "inappropriate input parameters")
 
-    def test_0_perimeter(self):
+    def test_perimeter_zero_3(self):
         res = triangle.perimeter(0, 3, 0)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    # tests with negative parameter
+
+    def test_perimeter_negative_1(self):
+        res = triangle.perimeter(-100000, 1, 4)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_perimeter_negative_2(self):
+        res = triangle.perimeter(-1, 5, 7)
+        self.assertEqual(res, "inappropriate input parameters")
+
+    def test_perimeter_negative_3(self):
+        res = triangle.perimeter(-1, 5, -6)
         self.assertEqual(res, "inappropriate input parameters")
 
     # tests with regular numbers
