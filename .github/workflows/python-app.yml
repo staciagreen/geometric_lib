@@ -2,7 +2,7 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "lab-5" ]
   pull_request:
     branches: [ "main" ]
 
