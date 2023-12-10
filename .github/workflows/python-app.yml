@@ -1,3 +1,4 @@
+
 name: Python application
 
 on:
@@ -13,14 +14,14 @@ jobs:
   test:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.11
       uses: actions/setup-python@v3
-      with:
-        python-version: "3.11"
+      with: 
+        python-version: "3.11"    
     - name: Run unittests
-      run: |
-        python unit_tests.py
+      run: | 
+        python -m unittest
