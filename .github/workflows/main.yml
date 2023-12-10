@@ -7,13 +7,19 @@ on:
 #    branches: [ "main" ]
 
 jobs:
-  test:
-    strategy:
-      matrix:
-        os: [ windows-latest, ubuntu-latest ]
-    runs-on: ${{ matrix.os }}
+  test_windows:
+    runs-on: windows-latest
 
     steps:
       - name: Run unittests
         run: |
           python -m unittest
+
+  test_ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run unittests
+        run: |
+          python -m unittest
+
